@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>笔盒在线永久观看入口-资源与频道指南</title>
+<meta name="description" content="笔盒在线永久观看入口整理笔盒各频道可用线路、收藏同步、字幕与清晰度设置，附播放故障排查与替代路径说明，方便快速找到想看的内容。">
+<meta name="keywords" content="笔盒在线永久观看入口">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b3a5c'/%3E%3Crect x='14' y='20' width='36' height='26' rx='4' fill='%23f4b73f'/%3E%3Cpath d='M28 28l10 5-10 5z' fill='%231b3a5c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1b2a3a;--ink-2:#3d5064;--ink-3:#6b7d8e;
+  --bg:#f6f4ef;--bg-2:#ece8df;--card:#ffffff;
+  --brand:#1b3a5c;--brand-2:#2c5b86;--accent:#e08a12;--accent-2:#f4b73f;
+  --line:#d9d3c6;--line-2:#e8e3d8;
+  --ok:#2f7d5c;--warn:#b4562b;
+  --r-s:6px;--r-m:10px;--r-l:16px;
+  --sh-1:0 1px 2px rgba(27,42,58,.06),0 2px 8px rgba(27,42,58,.05);
+  --sh-2:0 2px 6px rgba(27,42,58,.08),0 10px 24px rgba(27,42,58,.07);
+  --sp-1:.35rem;--sp-2:.6rem;--sp-3:1rem;--sp-4:1.5rem;--sp-5:2.25rem;--sp-6:3.25rem;
+  --ann-h:38px;--head-h:64px;
+  --fs-h1:clamp(1.9rem,4.2vw,3rem);
+  --fs-h2:clamp(1.3rem,2.2vw,1.65rem);
+  --fs-h3:1.06rem;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+  font-size:16px;line-height:1.75;-webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.01em}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .9em;padding-left:1.2em}
+li{margin-bottom:.35em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--sp-4)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+section[id],div[id]{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 12px)}
+
+/* 公告条 */
+.ann{position:sticky;top:0;z-index:60;background:var(--brand);color:#e9eef4;font-size:.82rem;height:var(--ann-h);display:flex;align-items:center}
+.ann .wrap{display:flex;align-items:center;gap:.6rem;width:100%;overflow:hidden}
+.ann b{color:var(--accent-2);font-weight:700;white-space:nowrap}
+.ann .ann-txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ann time{color:#b9c9d8;white-space:nowrap}
+
+/* 页头 */
+.head{position:sticky;top:var(--ann-h);z-index:55;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);height:var(--head-h);display:flex;align-items:center}
+.head .wrap{display:flex;align-items:center;gap:var(--sp-3);width:100%}
+.brand{display:flex;align-items:center;gap:.55rem;font-weight:800;color:var(--brand);font-size:1.02rem;letter-spacing:.02em;flex:0 0 auto}
+.brand svg{width:30px;height:30px;flex:0 0 auto}
+.brand span{white-space:nowrap}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;flex:1 1 auto;min-width:0}
+.nav a{padding:.32rem .55rem;border-radius:var(--r-s);color:var(--ink-2);font-size:.9rem;white-space:nowrap}
+.nav a:hover{background:var(--bg-2);text-decoration:none;color:var(--brand)}
+.head-tools{display:flex;align-items:center;gap:.5rem;flex:0 0 auto}
+.search{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:var(--bg);padding:2px 2px 2px 10px}
+.search input{border:0;background:transparent;font:inherit;font-size:.85rem;width:10.5rem;color:var(--ink);padding:.2rem 0}
+.search input:focus{outline:none}
+.search button{border:0;background:var(--brand);color:#fff;font:inherit;font-size:.8rem;border-radius:999px;padding:.28rem .7rem;cursor:pointer}
+.search button:hover{background:var(--brand-2)}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:var(--r-s);width:38px;height:34px;align-items:center;justify-content:center;cursor:pointer}
+.menu-btn svg{width:18px;height:18px}
+.search-msg{font-size:.82rem;color:var(--warn);padding:.4rem 0 0;display:none}
+
+/* 首屏 */
+.hero{position:relative;background:linear-gradient(160deg,#16304c 0%,#1b3a5c 45%,#27527a 100%);color:#eaf0f6;overflow:hidden}
+.hero .wrap{position:relative;padding-top:var(--sp-6);padding-bottom:var(--sp-6);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:var(--sp-5);align-items:center}
+.hero h1{font-size:var(--fs-h1);color:#fff;letter-spacing:.01em}
+.hero .kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;letter-spacing:.16em;color:var(--accent-2);border:1px solid rgba(244,183,63,.45);border-radius:999px;padding:.15rem .7rem;margin-bottom:var(--sp-3)}
+.hero p.lead{font-size:1.02rem;color:#cddae6;max-width:34em;margin-bottom:var(--sp-4)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:var(--sp-4)}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.62rem 1.15rem;border-radius:var(--r-s);font-size:.93rem;font-weight:600;border:1px solid transparent;transition:transform .18s ease,background .18s ease}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--accent-2);color:#25313d}
+.btn-primary:hover{background:#ffca5e}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#eaf0f6}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.hero-stats{display:flex;gap:var(--sp-4);flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.16);padding-top:var(--sp-3)}
+.hero-stats div{font-size:.8rem;color:#b3c5d6}
+.hero-stats strong{display:block;font-size:1.35rem;color:#fff;font-weight:800;letter-spacing:.02em}
+.hero-art{position:relative;min-height:290px}
+.hero-art svg{width:100%;height:auto;max-height:360px}
+.hero-art .cap{position:absolute;right:0;bottom:-4px;font-size:.72rem;color:#9fb5c8}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+  .btn:hover{transform:none}
+}
+
+/* 通用板块 */
+.sect{padding:var(--sp-6) 0;border-bottom:1px solid var(--line-2)}
+.sect:last-of-type{border-bottom:0}
+.sect-head{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--sp-3);margin-bottom:var(--sp-4);flex-wrap:wrap}
+.sect-head h2{font-size:var(--fs-h2);color:var(--brand);display:flex;align-items:center;gap:.6rem}
+.sect-head h2::before{content:"";width:5px;height:1.15em;background:var(--accent);border-radius:3px;flex:0 0 auto}
+.sect-head .sub{font-size:.86rem;color:var(--ink-3);max-width:40em}
+.more-link{font-size:.86rem;color:var(--brand-2);white-space:nowrap}
+
+/* 栏目布局：主+侧 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-5);align-items:start}
+.layout-main{min-width:0}
+.side{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px);display:flex;flex-direction:column;gap:var(--sp-3)}
+.side-nav{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3);box-shadow:var(--sh-1)}
+.side-nav h3{font-size:.86rem;color:var(--ink-3);letter-spacing:.08em;margin-bottom:var(--sp-2);font-weight:700}
+.side-nav ol{list-style:none;margin:0;padding:0;border-left:2px solid var(--line-2)}
+.side-nav li{margin:0}
+.side-nav a{display:block;padding:.32rem .7rem;font-size:.88rem;color:var(--ink-2);border-left:2px solid transparent;margin-left:-2px}
+.side-nav a:hover{color:var(--brand);text-decoration:none;background:var(--bg)}
+.side-nav a.active{color:var(--brand);font-weight:700;border-left-color:var(--accent);background:var(--bg)}
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3);box-shadow:var(--sh-1);font-size:.86rem;color:var(--ink-2)}
+.side-card h3{font-size:.92rem;color:var(--brand);margin-bottom:var(--sp-2)}
+.side-card ul{padding-left:1.05em;margin-bottom:0}
+
+/* 概览 */
+.ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:var(--sp-3)}
+.ov-item{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3);box-shadow:var(--sh-1)}
+.ov-item h3{font-size:.98rem;color:var(--brand);margin-bottom:.35rem}
+.ov-item p{font-size:.87rem;color:var(--ink-2);margin:0}
+.ov-item b{color:var(--ink)}
+
+/* 精选卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:var(--sp-3)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-1);display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh-2)}
+.card .thumb{aspect-ratio:16/9;overflow:hidden;background:var(--bg-2)}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card-body{padding:var(--sp-3);display:flex;flex-direction:column;gap:.4rem;flex:1}
+.card-body h3{font-size:.98rem;color:var(--ink)}
+.card-body h3 a{color:inherit}
+.card-body h3 a:hover{color:var(--brand-2)}
+.card-body p{font-size:.85rem;color:var(--ink-2);margin:0}
+.meta{font-size:.75rem;color:var(--ink-3);display:flex;gap:.6rem;flex-wrap:wrap}
+.tag{display:inline-block;font-size:.72rem;padding:.08rem .5rem;border-radius:999px;background:var(--bg-2);color:var(--ink-2);border:1px solid var(--line-2)}
+.tag.warn{background:#fdf1e8;color:var(--warn);border-color:#f0d8c6}
+.tag.ok{background:#eaf5ef;color:var(--ok);border-color:#cfe7db}
+
+/* 最新更新紧凑列表 */
+.upd-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;background:var(--card)}
+.upd-list li{display:grid;grid-template-columns:92px minmax(0,1fr) auto;gap:var(--sp-3);align-items:baseline;padding:.7rem var(--sp-3);border-bottom:1px solid var(--line-2);font-size:.88rem}
+.upd-list li:last-child{border-bottom:0}
+.upd-list li:hover{background:var(--bg)}
+.upd-list time{color:var(--ink-3);font-size:.8rem;font-variant-numeric:tabular-nums}
+.upd-list .u-main{color:var(--ink-2)}
+.upd-list .u-main b{color:var(--ink);font-weight:600}
+.upd-list .u-tag{font-size:.72rem;color:var(--brand-2);white-space:nowrap}
+
+/* 分类入口标签索引 */
+.idx-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--sp-3)}
+.idx-group{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3)}
+.idx-group h3{font-size:.92rem;color:var(--brand);margin-bottom:.6rem;display:flex;align-items:center;gap:.4rem}
+.idx-group h3 em{font-style:normal;font-size:.72rem;color:var(--ink-3);font-weight:400}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chips a{font-size:.8rem;padding:.18rem .6rem;border-radius:var(--r-s);background:var(--bg);border:1px solid var(--line-2);color:var(--ink-2)}
+.chips a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+
+/* 深度解析 */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);padding:var(--sp-4) var(--sp-5);box-shadow:var(--sh-1)}
+.deep .lede{font-size:1rem;color:var(--ink-2);border-left:3px solid var(--accent);padding-left:var(--sp-3);margin-bottom:var(--sp-4)}
+.deep h3{font-size:var(--fs-h3);color:var(--brand);margin:var(--sp-4) 0 .5rem}
+.deep h3:first-of-type{margin-top:0}
+.deep p{font-size:.94rem;color:var(--ink-2)}
+.deep strong{color:var(--ink)}
+.deep .callout{background:#fdf7ec;border:1px solid #f0ddb9;border-radius:var(--r-m);padding:var(--sp-3);margin:var(--sp-3) 0;font-size:.9rem;color:#6b5326}
+.deep table{width:100%;border-collapse:collapse;font-size:.85rem;margin:var(--sp-3) 0}
+.deep th,.deep td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+.deep th{background:var(--bg-2);color:var(--ink);font-weight:700}
+.deep td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* 体验指南步骤 */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:var(--sp-3);counter-reset:st}
+.steps li{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3) var(--sp-3) var(--sp-3) 3.1rem;position:relative;font-size:.88rem;color:var(--ink-2);counter-increment:st;box-shadow:var(--sh-1)}
+.steps li::before{content:counter(st);position:absolute;left:var(--sp-3);top:var(--sp-3);width:1.7rem;height:1.7rem;border-radius:50%;background:var(--brand);color:#fff;font-size:.85rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.steps li b{display:block;color:var(--ink);font-size:.95rem;margin-bottom:.2rem}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;background:var(--card)}
+.compare>div{padding:var(--sp-3) var(--sp-4)}
+.compare .col-a{background:#fbf8f1;border-right:1px solid var(--line)}
+.compare .col-b{background:#f2f7fa}
+.compare h3{font-size:.98rem;margin-bottom:.6rem;color:var(--brand)}
+.compare ul{padding-left:1.05em;margin:0;font-size:.86rem;color:var(--ink-2)}
+
+/* FAQ */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);margin-bottom:.6rem;overflow:hidden}
+.faq summary{cursor:pointer;padding:.72rem var(--sp-3);font-size:.92rem;font-weight:600;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:.6rem;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-weight:800;font-size:1.1rem;line-height:1;flex:0 0 auto}
+.faq details[open] summary::after{content:"–"}
+.faq details[open] summary{background:var(--bg);border-bottom:1px solid var(--line-2)}
+.faq .ans{padding:.8rem var(--sp-3) .9rem;font-size:.88rem;color:var(--ink-2);margin:0}
+
+/* 评论区 */
+.cmts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--sp-3)}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3);font-size:.87rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.45rem}
+.cmt .who{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--ink-3)}
+.cmt .av{width:26px;height:26px;border-radius:50%;background:var(--brand-2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;flex:0 0 auto}
+.cmt blockquote{margin:0;font-size:.88rem;color:var(--ink)}
+.cmt .rate{font-size:.75rem;color:var(--accent);letter-spacing:.06em}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--sp-3)}
+.news article{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3);box-shadow:var(--sh-1)}
+.news article h3{font-size:.94rem;color:var(--ink);margin-bottom:.3rem}
+.news article p{font-size:.85rem;color:var(--ink-2);margin:0 0 .4rem}
+.news article .meta{font-size:.74rem}
+
+/* 相关推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.rec-tags a{font-size:.85rem;padding:.3rem .8rem;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink-2)}
+.rec-tags a:hover{background:var(--brand);border-color:var(--brand);color:#fff;text-decoration:none}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 1.1rem;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 var(--sp-3) var(--sp-3);font-size:.88rem;color:var(--ink-2)}
+.timeline li::before{content:"";position:absolute;left:-1.42rem;top:.45rem;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.timeline time{display:block;font-size:.76rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.timeline b{color:var(--ink)}
+
+/* 页脚 */
+.foot{background:#14273a;color:#c4d2df;padding:var(--sp-6) 0 var(--sp-4);font-size:.86rem}
+.foot .f-top{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,.9fr));gap:var(--sp-4);padding-bottom:var(--sp-4);border-bottom:1px solid rgba(255,255,255,.12)}
+.foot .f-brand{display:flex;align-items:center;gap:.6rem;color:#fff;font-weight:800;font-size:1.05rem;margin-bottom:.6rem}
+.foot .f-brand svg{width:28px;height:28px}
+.foot p{color:#9fb3c6;margin-bottom:.5rem}
+.foot h4{color:#fff;font-size:.92rem;margin-bottom:.6rem}
+.foot ul{list-style:none;padding:0;margin:0}
+.foot li{margin-bottom:.35rem}
+.foot a{color:#a9bccd}
+.foot a:hover{color:#fff}
+.foot .f-bot{padding-top:var(--sp-3);display:flex;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;font-size:.78rem;color:#8499ad}
+.foot .disc{font-size:.78rem;color:#8499ad;margin-top:.4rem}
+
+/* 回到顶部 */
+.totop{position:fixed;right:18px;bottom:22px;z-index:70;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--brand);box-shadow:var(--sh-2);display:none;align-items:center;justify-content:center;cursor:pointer}
+.totop.show{display:flex}
+.totop svg{width:18px;height:18px}
+
+/* 响应式 */
+@media (max-width:1024px){
+  .layout{grid-template-columns:1fr}
+  .side{position:static;order:2;flex-direction:row;flex-wrap:wrap}
+  .side>*{flex:1 1 260px}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-art{order:-1;min-height:0;max-width:420px}
+  .foot .f-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);padding:var(--sp-2) var(--sp-4) var(--sp-3);flex-direction:column;box-shadow:var(--sh-2)}
+  .nav.open{display:flex}
+  .nav a{padding:.55rem .4rem;border-bottom:1px solid var(--line-2);border-radius:0}
+  .menu-btn{display:flex}
+  .head .wrap{gap:.6rem}
+  .search input{width:7.5rem}
+  .deep{padding:var(--sp-3)}
+  .upd-list li{grid-template-columns:72px minmax(0,1fr);gap:.4rem var(--sp-2)}
+  .upd-list .u-tag{grid-column:2;font-size:.7rem}
+  .compare{grid-template-columns:1fr}
+  .compare .col-a{border-right:0;border-bottom:1px solid var(--line)}
+}
+@media (max-width:520px){
+  .wrap{padding:0 1rem}
+  .hero .wrap{padding-top:var(--sp-5);padding-bottom:var(--sp-5)}
+  .search{display:none}
+  .foot .f-top{grid-template-columns:1fr}
+  .card-grid{grid-template-columns:1fr}
+  .hero-stats{gap:var(--sp-3)}
+  .hero-stats strong{font-size:1.15rem}
+  .sect{padding:var(--sp-5) 0}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="ann" role="region" aria-label="站点公告">
+  <div class="wrap">
+    <b>笔盒在线永久观看入口</b>
+    <span class="ann-txt">11 月 6 日线路维护：华东节点已替换为 hd-e2，收藏与观看记录同步正常；会员到期提醒改为提前 3 天推送。</span>
+    <time datetime="2026-11-08">2026-11-08</time>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="head" id="top">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="笔盒在线永久观看入口 首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <rect width="64" height="64" rx="14" fill="#1b3a5c"/>
+        <rect x="13" y="19" width="38" height="27" rx="4" fill="#f4b73f"/>
+        <rect x="13" y="19" width="38" height="6" rx="3" fill="#e08a12"/>
+        <path d="M28 28l11 5.5-11 5.5z" fill="#1b3a5c"/>
+        <circle cx="46" cy="24" r="2.6" fill="#1b3a5c"/>
+      </svg>
+      <span>笔盒在线永久观看入口</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="primaryNav" aria-label="打开导航菜单">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="primaryNav" aria-label="主题导航">
+      <a href="/#overview">观看入口概览</a>
+      <a href="/#picks">本周精选</a>
+      <a href="/#latest">更新动态</a>
+      <a href="/#channels">频道分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">观看指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">用户反馈</a>
+    </nav>
+    <div class="head-tools">
+      <form class="search" id="searchForm" role="search" aria-label="站内搜索">
+        <label class="sr-only" for="q">搜索频道或条目</label>
+        <input id="q" name="q" type="search" placeholder="搜频道 / 剧集 / 线路" autocomplete="off">
+        <button type="submit">查找</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<div class="hero" role="banner">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="kicker">2026 年 11 月线路表 · 已核对</span>
+      <h1>笔盒在线永久观看入口</h1>
+      <p class="lead">把想看的内容、能用的线路和会踩的坑放在一处：频道按剧集、纪录片、动画、体育赛事四类归档，每条线路标注清晰度上限与最近一次可用时间，收藏与观看进度跨端同步走同一个账号。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#picks">查看本周精选 12 条</a>
+        <a class="btn btn-ghost" href="/#channels">按频道找内容</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>38</strong>条可用线路</div>
+        <div><strong>214</strong>部在架剧集</div>
+        <div><strong>9</strong>个内容频道</div>
+        <div><strong>11-06</strong>最近线路轮换</div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 300" role="img" aria-label="笔盒播放界面示意图">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2c5b86"/><stop offset="1" stop-color="#16304c"/>
+          </linearGradient>
+        </defs>
+        <rect x="18" y="40" width="300" height="180" rx="12" fill="#0f2334" stroke="rgba(255,255,255,.18)"/>
+        <rect x="18" y="40" width="300" height="180" rx="12" fill="url(#g1)" opacity=".55"/>
+        <rect x="34" y="56" width="268" height="120" rx="6" fill="#0a1a27"/>
+        <circle cx="168" cy="112" r="26" fill="rgba(244,183,63,.92)"/>
+        <path d="M160 99l22 13-22 13z" fill="#14273a"/>
+        <rect x="34" y="186" width="150" height="7" rx="3.5" fill="rgba(255,255,255,.28)"/>
+        <rect x="34" y="186" width="96" height="7" rx="3.5" fill="#f4b73f"/>
+        <rect x="196" y="184" width="46" height="11" rx="5" fill="rgba(255,255,255,.16)"/>
+        <rect x="250" y="184" width="52" height="11" rx="5" fill="rgba(255,255,255,.16)"/>
+        <rect x="332" y="66" width="74" height="150" rx="10" fill="#f6f4ef"/>
+        <rect x="344" y="80" width="50" height="8" rx="4" fill="#1b3a5c"/>
+        <rect x="344" y="96" width="50" height="34" rx="4" fill="#e3ddd0"/>
+        <rect x="344" y="138" width="50" height="12" rx="4" fill="#e3ddd0"/>
+        <rect x="344" y="156" width="36" height="12" rx="4" fill="#e3ddd0"/>
+        <rect x="344" y="178" width="44" height="12" rx="4" fill="#f4b73f"/>
+        <rect x="40" y="238" width="112" height="12" rx="6" fill="rgba(255,255,255,.16)"/>
+        <rect x="164" y="238" width="76" height="12" rx="6" fill="rgba(255,255,255,.16)"/>
+        <rect x="252" y="238" width="40" height="12" rx="6" fill="rgba(255,255,255,.28)"/>
+        <circle cx="336" cy="244" r="9" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
+        <path d="M336 239v6l4 3" stroke="rgba(255,255,255,.6)" stroke-width="2" fill="none"/>
+      </svg>
+      <span class="cap">播放器线路切换面板示意</span>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- 频道概览 + 侧栏 -->
+  <section class="sect" id="overview">
+    <div class="wrap layout">
+      <div class="layout-main">
+        <div class="sect-head">
+          <h2>观看入口概览</h2>
+          <span class="sub">四个维度决定一条入口是否值得收藏：线路稳定性、清晰度上限、字幕齐全程度、跨端同步是否正常。</span>
+        </div>
+        <div class="ov-grid">
+          <div class="ov-item">
+            <h3>线路状态</h3>
+            <p>当前 38 条线路中 <b>31 条</b>标记为可用，4 条限速，3 条仅移动端可开。11 月 6 日轮换后，hd-e2 成为华东主推线路。</p>
+          </div>
+          <div class="ov-item">
+            <h3>清晰度上限</h3>
+            <p>1080p 线路 22 条，720p 线路 11 条，4K 仅 5 条且集中在纪录片与电影频道，需要 25Mbps 以上带宽。</p>
+          </div>
+          <div class="ov-item">
+            <h3>字幕支持</h3>
+            <p>简体中文 100% 覆盖，繁体与英文各覆盖 <b>约 70%</b>。日韩剧集的日语原声字幕在 11 月 2 日补齐 14 部。</p>
+          </div>
+          <div class="ov-item">
+            <h3>收藏同步</h3>
+            <p>同一账号在网页、平板、电视端收藏与进度互通。切换账号后需手动触发一次同步，否则可能读到旧进度。</p>
+          </div>
+          <div class="ov-item">
+            <h3>免登录范围</h3>
+            <p>试看章节可免登录，时长 6 分钟；完整剧集与纪录片需登录。家长控制开关在设置页第三栏。</p>
+          </div>
+          <div class="ov-item">
+            <h3>入口有效期</h3>
+            <p>线路地址按周轮换，收藏页保留最近 30 天历史。长期不变的是账号与频道结构，不是单一链接。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="side" aria-label="侧栏导航与提示">
+        <nav class="side-nav" aria-label="本页栏目导航">
+          <h3>本页栏目</h3>
+          <ol>
+            <li><a href="/#overview" class="active">观看入口概览</a></li>
+            <li><a href="/#picks">本周精选 12 条</a></li>
+            <li><a href="/#latest">更新动态</a></li>
+            <li><a href="/#channels">频道分类索引</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">观看体验指南</a></li>
+            <li><a href="/#compare">线路对照</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">用户反馈</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#timeline">线路轮换时间线</a></li>
+          </ol>
+        </nav>
+        <div class="side-card">
+          <h3>今日提示</h3>
+          <ul>
+            <li>11 月 8 日 20:00–22:00 华南节点例行巡检，可能出现 3–5 秒卡顿。</li>
+            <li>《潮汐线》第 7 集在 hd-e2 有音画不同步，切换 hd-c1 可恢复。</li>
+            <li>电视端 3.4.1 版本已修复收藏不同步。</li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>热门搜索词</h3>
+          <div class="chips">
+            <a href="/#channels">悬疑剧集在线观看</a>
+            <a href="/#channels">自然纪录片 4K</a>
+            <a href="/#channels">体育赛事回放</a>
+            <a href="/#channels">国产动画合集</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 精选推荐 -->
+  <section class="sect" id="picks">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>本周精选 12 条</h2>
+        <span class="sub">按 11 月 2 日至 11 月 8 日的播放完成率与收藏增量排序，去掉了重复出现的同一剧集不同线路。</span>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-tide/480/270" width="480" height="270" loading="lazy" alt="《潮汐线》海报冷色调海面构图"></div>
+          <div class="card-body">
+            <h3><a href="/#news">潮汐线 · 第 7 集</a></h3>
+            <p>悬疑剧更新至第 7 集，本周完成率 78%。hd-c1 线路音画同步正常，hd-e2 有 0.4 秒偏移。</p>
+            <div class="meta"><span class="tag warn">音画问题</span><span>11-06 更新</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-reef/480/270" width="480" height="270" loading="lazy" alt="珊瑚礁纪录片水下拍摄画面"></div>
+          <div class="card-body">
+            <h3><a href="/#channels">珊瑚礁的三百天</a></h3>
+            <p>自然纪录片 4K 版上线，片长 52 分钟，含 8 分钟拍摄手记。建议 25Mbps 以上带宽播放。</p>
+            <div class="meta"><span class="tag ok">4K 可用</span><span>11-04 上线</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-court/480/270" width="480" height="270" loading="lazy" alt="室内篮球场看台与灯光"></div>
+          <div class="card-body">
+            <h3><a href="/#news">城市联赛半决赛回放</a></h3>
+            <p>两场半决赛全场回放已上架，含第四节最后 2 分钟战术角标，回放时长 1 小时 46 分。</p>
+            <div class="meta"><span class="tag">体育回放</span><span>11-03 上线</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-ink/480/270" width="480" height="270" loading="lazy" alt="水墨风格动画场景留白构图"></div>
+          <div class="card-body">
+            <h3><a href="/#channels">墨间少年 第二季</a></h3>
+            <p>国产动画更新至第 9 话，每话 18 分钟。字幕轨新增简体与繁体双轨，切换在播放器右下角。</p>
+            <div class="meta"><span class="tag">国产动画</span><span>11-07 更新</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-kitchen/480/270" width="480" height="270" loading="lazy" alt="纪录片厨房场景灶台与刀具"></div>
+          <div class="card-body">
+            <h3><a href="/#channels">一口锅的旅行</a></h3>
+            <p>美食纪录片 6 集全，每集 24 分钟，第三集在 11 月 5 日补上英文字幕。</p>
+            <div class="meta"><span class="tag">字幕补齐</span><span>11-05 更新</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-noir/480/270" width="480" height="270" loading="lazy" alt="雨夜街道霓虹灯影氛围"></div>
+          <div class="card-body">
+            <h3><a href="/#news">雾港档案 第 3 季</a></h3>
+            <p>犯罪悬疑剧，12 集一次放出。第 2 集片头有 12 秒静音属于母带问题，非播放故障。</p>
+            <div class="meta"><span class="tag warn">母带说明</span><span>11-02 上线</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-track/480/270" width="480" height="270" loading="lazy" alt="田径跑道俯拍线条与起跑线"></div>
+          <div class="card-body">
+            <h3><a href="/#news">秋季田径公开赛集锦</a></h3>
+            <p>12 个项目集锦，含男子 200 米决赛全场镜头，单条最长 9 分 40 秒。</p>
+            <div class="meta"><span class="tag">赛事集锦</span><span>11-01 上线</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-paper/480/270" width="480" height="270" loading="lazy" alt="手工纸艺工作台纸张与刻刀"></div>
+          <div class="card-body">
+            <h3><a href="/#guide">手工纸艺入门 8 讲</a></h3>
+            <p>体验指南配套短片，每讲 9 分钟，适合作为清晰度与倍速功能的测试片源。</p>
+            <div class="meta"><span class="tag">入门片单</span><span>10-30 上线</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-orbit/480/270" width="480" height="270" loading="lazy" alt="太空轨道卫星与地球弧线"></div>
+          <div class="card-body">
+            <h3><a href="/#channels">轨道之上</a></h3>
+            <p>航天纪录片 3 集，4K 版本在 hd-e2 与 hd-c1 双线路，切换时进度保留。</p>
+            <div class="meta"><span class="tag ok">双线路</span><span>10-29 上线</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-stage/480/270" width="480" height="270" loading="lazy" alt="剧场舞台灯光与幕布"></div>
+          <div class="card-body">
+            <h3><a href="/#channels">舞台现场：四幕剧</a></h3>
+            <p>戏剧现场录制版，分上下半场，中场休息 15 分钟保留在片源中。</p>
+            <div class="meta"><span class="tag">现场录制</span><span>10-28 上线</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-switch/480/270" width="480" height="270" loading="lazy" alt="机房交换机指示灯排列"></div>
+          <div class="card-body">
+            <h3><a href="/#deep">线路切换实测记录</a></h3>
+            <p>同一集在三条线路各播 10 分钟的卡顿次数、起播耗时与平均码率对比。</p>
+            <div class="meta"><span class="tag">实测数据</span><span>11-06 整理</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/penbox-radio/480/270" width="480" height="270" loading="lazy" alt="老式收音机旋钮与刻度盘"></div>
+          <div class="card-body">
+            <h3><a href="/#channels">夜间电台故事集</a></h3>
+            <p>音频节目 20 期，网页端支持后台播放，切到其他频道不中断。</p>
+            <div class="meta"><span class="tag">音频节目</span><span>10-27 上线</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="sect" id="latest">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>最新更新动态</h2>
+        <span class="sub">只记录 11 月 1 日以来的条目变动、字幕补齐与线路调整，不含宣传文案。</span>
+      </div>
+      <ul class="upd-list">
+        <li><time datetime="2026-11-08">今天 09:20</time><span class="u-main"><b>《潮汐线》第 7 集</b> 在 hd-e2 标记音画偏移 0.4 秒，已推送切换建议</span><span class="u-tag">线路问题</span></li>
+        <li><time datetime="2026-11-08">今天 08:05</time><span class="u-main"><b>《墨间少年 第二季》第 9 话</b> 上线，简繁双字幕轨</span><span class="u-tag">内容更新</span></li>
+        <li><time datetime="2026-11-07">昨天 21:40</time><span class="u-main"><b>移动端 3.5.0</b> 修复横屏切换后字幕消失，需手动更新</span><span class="u-tag">客户端</span></li>
+        <li><time datetime="2026-11-07">昨天 15:10</time><span class="u-main"><b>《一口锅的旅行》第三集</b> 英文字幕补齐，共 412 条</span><span class="u-tag">字幕</span></li>
+        <li><time datetime="2026-11-06">11-06 18:30</time><span class="u-main"><b>华东节点</b> 由 hd-e1 换为 hd-e2，旧线路保留 14 天只读</span><span class="u-tag">线路轮换</span></li>
+        <li><time datetime="2026-11-05">11-05 12:00</time><span class="u-main"><b>《珊瑚礁的三百天》</b> 4K 版码率由 18Mbps 提到 24Mbps</span><span class="u-tag">清晰度</span></li>
+        <li><time datetime="2026-11-04">11-04 20:15</time><span class="u-main"><b>家长控制</b> 新增按频道屏蔽，可单独关闭体育赛事频道</span><span class="u-tag">功能</span></li>
+        <li><time datetime="2026-11-03">11-03 10:45</time><span class="u-main"><b>城市联赛半决赛</b> 两场回放上架，含战术角标版本</span><span class="u-tag">体育</span></li>
+        <li><time datetime="2026-11-02">11-02 19:00</time><span class="u-main"><b>《雾港档案》第 3 季</b> 12 集一次放出，第 2 集片头静音已加说明</span><span class="u-tag">内容更新</span></li>
+        <li><time datetime="2026-11-01">11-01 16:30</time><span class="u-main"><b>收藏同步</b> 电视端 3.4.1 修复换账号后进度残留</span><span class="u-tag">修复</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 频道分类 -->
+  <section class="sect" id="channels">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>频道分类索引</h2>
+        <span class="sub">九个内容频道，名称按用户实际搜索习惯命名；每个频道下列出常搜条目，点开即定位到对应分组。</span>
+      </div>
+      <div class="idx-groups">
+        <div class="idx-group">
+          <h3>悬疑剧集 <em>42 部</em></h3>
+          <div class="chips">
+            <a href="/#picks">潮汐线</a><a href="/#picks">雾港档案</a><a href="/#picks">第七码头</a><a href="/#picks">暗巷来信</a><a href="/#picks">证词 1999</a>
+          </div>
+        </div>
+        <div class="idx-group">
+          <h3>自然纪录片 <em>67 部</em></h3>
+          <div class="chips">
+            <a href="/#picks">珊瑚礁的三百天</a><a href="/#picks">高原的冬天</a><a href="/#picks">候鸟航线</a><a href="/#picks">雨林地层</a>
+          </div>
+        </div>
+        <div class="idx-group">
+          <h3>航天与科学 <em>28 部</em></h3>
+          <div class="chips">
+            <a href="/#picks">轨道之上</a><a href="/#picks">推进器简史</a><a href="/#picks">深空测控</a><a href="/#picks">月面基地设想</a>
+          </div>
+        </div>
+        <div class="idx-group">
+          <h3>国产动画 <em>35 部</em></h3>
+          <div class="chips">
+            <a href="/#picks">墨间少年</a><a href="/#picks">涂山小记</a><a href="/#picks">纸飞机计划</a><a href="/#picks">夜行灯</a>
+          </div>
+        </div>
+        <div class="idx-group">
+          <h3>体育赛事回放 <em>19 个</em></h3>
+          <div class="chips">
+            <a href="/#picks">城市联赛半决赛</a><a href="/#picks">秋季田径公开赛</a><a href="/#picks">青少年游泳赛</a><a href="/#picks">室内攀岩分站</a>
+          </div>
+        </div>
+        <div class="idx-group">
+          <h3>美食纪录 <em>24 部</em></h3>
+          <div class="chips">
+            <a href="/#picks">一口锅的旅行</a><a href="/#picks">街角早点</a><a href="/#picks">发酵日记</a><a href="/#picks">海岸市场</a>
+          </div>
+        </div>
+        <div class="idx-group">
+          <h3>舞台现场 <em>16 部</em></h3>
+          <div class="chips">
+            <a href="/#picks">舞台现场：四幕剧</a><a href="/#picks">独白三十分钟</a><a href="/#picks">小剧场合集</a>
+          </div>
+        </div>
+        <div class="idx-group">
+          <h3>音频节目 <em>31 档</em></h3>
+          <div class="chips">
+            <a href="/#picks">夜间电台故事集</a><a href="/#picks">城市声音档案</a><a href="/#picks">长篇连载朗读</a>
+          </div>
+        </div>
+        <div class="idx-group">
+          <h3>手作与生活 <em>22 档</em></h3>
+          <div class="chips">
+            <a href="/#guide">手工纸艺入门 8 讲</a><a href="/#guide">木作基础</a><a href="/#guide">家常烘焙节奏</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="sect" id="deep">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>深度解析</h2>
+        <span class="sub">围绕“线路越多越稳”这个常见判断做拆解，用 11 月 2 日至 6 日的实测记录核对。</span>
+      </div>
+      <div class="deep">
+        <p class="lede">判断：可供切换的线路数量与观看稳定性不是正相关。38 条线路里有 7 条长期低码率，真正承担 80% 播放量的只有 6 条；把注意力放在主线路与备用线路的组合上，比收藏一大堆地址更有效。</p>
+
+        <h3>一、11 月 2 日至 6 日的三条线路实测</h3>
+        <p>同一集《潮汐线》第 6 集，在 hd-e2、hd-c1、hd-b3 三条线路各播 10 分钟，记录起播耗时、卡顿次数与平均码率。测试环境为 100Mbps 家庭宽带，浏览器版本 Chrome 131，测试时间固定在 20:00–20:40。</p>
+        <table>
+          <tr><th>线路</th><th class="num">起播耗时</th><th class="num">10 分钟内卡顿</th><th class="num">平均码率</th><th>备注</th></tr>
+          <tr><td>hd-e2</td><td class="num">1.8 秒</td><td class="num">1 次</td><td class="num">6.2 Mbps</td><td>11-06 新轮换，音画偏 0.4 秒</td></tr>
+          <tr><td>hd-c1</td><td class="num">2.4 秒</td><td class="num">0 次</td><td class="num">5.8 Mbps</td><td>音画同步正常，字幕加载略慢</td></tr>
+          <tr><td>hd-b3</td><td class="num">4.1 秒</td><td class="num">3 次</td><td class="num">3.4 Mbps</td><td>仅移动端全量开放</td></tr>
+        </table>
+        <p>结果与“线路越多越稳”相反：<strong>hd-b3 虽然在线路列表里，实际是限速线路</strong>，三次卡顿都出现在第 3 到第 6 分钟。真正可用的组合是 hd-e2 主用加 hd-c1 备用，两者切换时进度保留在秒级。</p>
+
+        <h3>二、收藏页显示 38 条，为什么实际只有 6 条在承压</h3>
+        <p>线路列表把“可用”“限速”“仅移动端”混在一个计数里。11 月 6 日轮换后，38 条中有 31 条标可用，但后台按播放分发的权重集中在 hd-e2、hd-c1、hd-e1、hd-w2、hd-m1、hd-s4 六条。其余线路更多是灾备与区域补充，日常不会分到流量。</p>
+        <p>可核对的痕迹：11 月 6 日公告把华东主推从 hd-e1 改为 hd-e2，旧线路保留 14 天只读；11 月 7 日移动端 3.5.0 更新说明里写明“优先请求 hd-m1”。两条记录合起来说明流量分配是有明确顺序的。</p>
+        <div class="callout">可反驳点：如果你所在区域在 11 月 6 日之后连续三天用 hd-e2 出现起播超过 5 秒，那么上面的主备组合对你不成立，应以本地运营商出口为准，改用 hd-w2 或 hd-s4。</div>
+
+        <h3>三、说法差异：官方说明与用户反馈不一致的两处</h3>
+        <p>第一处是《雾港档案》第 3 季第 2 集片头 12 秒静音。官方口径是“母带本身如此”，用户反馈里有 9 条在 11 月 2 日至 3 日发帖认为是压制失误。核对方式是看同一集在 hd-c1 与 hd-w2 的表现：两条线路都在第 0 分 41 秒到第 0 分 53 秒静音，位置完全一致，支持母带说法。这是事实层。</p>
+        <p>第二处是收藏同步延迟。有用户转述“换设备后进度倒退 20 分钟”，官方 11 月 1 日的更新说明只承认“换账号后可能读到旧进度”。两句话覆盖范围不同，前者说的是换设备，后者说的是换账号。推测部分在于：电视端 3.4.1 修复的正是换账号场景，换设备是否彻底解决，目前没有对应版本的说明可查。</p>
+
+        <h3>四、规则前后变化：家长控制从整站开关变成按频道屏蔽</h3>
+        <p>11 月 4 日之前，家长控制只有一个总开关，打开后全站内容都需要 PIN。11 月 4 日 20:15 起改为按频道屏蔽，可以只关闭体育赛事与舞台现场，保留纪录片与动画。这个改动对家庭账号影响直接：同一个账号下，儿童模式与成人模式不再需要两个账号。</p>
+        <p>需要留意的边界是音频节目频道不在屏蔽列表内，官方帮助页的字段说明列了 9 个频道，其中“音频节目”一栏写的是“暂不支持”。这条写于 11 月 4 日，截至 11 月 8 日未变。</p>
+
+        <h3>五、把判断拆成可核对的三步</h3>
+        <ol>
+          <li>查线路状态：在收藏页点“线路详情”，看是否标了限速与仅移动端，两项都占的线路直接跳过。</li>
+          <li>查更新说明：客户端版本说明里会写优先请求哪条线路，版本号与日期可以对上。</li>
+          <li>查片源一致性：同一集换两条线路对比争议片段的时间点，位置一致则更可能是母带问题。</li>
+        </ol>
+        <p>做完这三步，能排除大部分“播不了”的误判。剩下的确实属于线路本身的问题，再考虑换主备组合。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section class="sect" id="guide">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>观看体验指南</h2>
+        <span class="sub">从选片到调字幕的五步，每步都对应播放器上的具体位置，不用记额外术语。</span>
+      </div>
+      <ol class="steps">
+        <li><b>先定频道再看线路</b>先在第 4 板块的频道索引里选内容类别，比如悬疑剧集或自然纪录片，再进入具体条目。频道决定片源范围，线路只决定同一片源的通道。</li>
+        <li><b>用 4K 前先测带宽</b>纪录片频道的 4K 条目需要 25Mbps 以上。播放器设置里有“网络检测”，11 月 5 日后显示实时码率，低于 18Mbps 会自动降到 1080p。</li>
+        <li><b>字幕轨在右下角切换</b>《墨间少年》第二季起支持简繁双轨。切换后如果字幕消失，是移动端 3.5.0 之前的已知问题，更新后恢复。</li>
+        <li><b>倍速不影响进度记录</b>1.25 倍与 1.5 倍播放都会按实际观看时长写入进度。测试片源可用第 2 板块的《手工纸艺入门 8 讲》，每讲 9 分钟便于核对。</li>
+        <li><b>家长控制按频道关闭</b>设置页第三栏可单独关闭体育赛事与舞台现场。音频节目暂不在屏蔽范围，需要额外用 PIN 限制。</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 线路对照 -->
+  <section class="sect" id="compare">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>主线路与备用线路对照</h2>
+        <span class="sub">两条常用线路的分工不同，按使用场景选，不要按“哪个更快”一刀切。</span>
+      </div>
+      <div class="compare">
+        <div class="col-a">
+          <h3>hd-e2（11-06 起华东主推）</h3>
+          <ul>
+            <li>起播 1.8 秒，平均码率 6.2 Mbps</li>
+            <li>4K 条目覆盖 5 条，含《珊瑚礁的三百天》</li>
+            <li>已知问题：《潮汐线》第 7 集音画偏 0.4 秒</li>
+            <li>适合：纪录片、动画连续看，长时间不切换</li>
+            <li>不适合：对白密集的悬疑剧，口型偏差可感知</li>
+          </ul>
+        </div>
+        <div class="col-b">
+          <h3>hd-c1（长期备用）</h3>
+          <ul>
+            <li>起播 2.4 秒，平均码率 5.8 Mbps</li>
+            <li>4K 条目覆盖 4 条，与 hd-e2 有 3 条重叠</li>
+            <li>已知问题：字幕加载比主线路慢 0.5–1 秒</li>
+            <li>适合：悬疑剧、舞台现场，音画同步优先</li>
+            <li>不适合：需要秒开字幕的场景，如学习类短片</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sect" id="faq">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>常见问题</h2>
+        <span class="sub">问题按 11 月 1 日至 8 日的反馈频次排列，答案只写可核对的部分。</span>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>悬疑剧集在 hd-e2 出现音画不同步，怎么换线路？</summary>
+          <p class="ans">《潮汐线》第 7 集在 hd-e2 有 0.4 秒偏移，原因写在了 11 月 8 日的线路说明里。播放器右下角点“线路”，选 hd-c1，进度保留到秒。切换后不需要重新登录，收藏状态不变。</p>
+        </details>
+        <details>
+          <summary>自然纪录片的 4K 版本有哪几部，带宽要求多少？</summary>
+          <p class="ans">《珊瑚礁的三百天》《高原的冬天》《候鸟航线》《轨道之上》共 4 部在架。4K 码率在 11 月 5 日由 18Mbps 提到 24Mbps，建议 25Mbps 以上。低于 18Mbps 时播放器会自动降到 1080p，不会中断播放。</p>
+        </details>
+        <details>
+          <summary>收藏和观看进度能在电视端同步吗？</summary>
+          <p class="ans">同一账号可以。11 月 1 日电视端 3.4.1 修复了换账号后读到旧进度的问题。换账号之后需要手动触发一次同步，入口在设置页第一栏底部，否则可能仍显示上一个账号的进度。</p>
+        </details>
+        <details>
+          <summary>家长控制可以只屏蔽体育赛事频道吗？</summary>
+          <p class="ans">可以。11 月 4 日 20:15 起改为按频道屏蔽，9 个频道里可单独关闭体育赛事与舞台现场。音频节目暂不支持屏蔽，帮助页该字段写的是“暂不支持”，截至 11 月 8 日未更新。</p>
+        </details>
+        <details>
+          <summary>移动端横屏后字幕消失是什么原因？</summary>
+          <p class="ans">移动端 3.5.0 之前的版本有这个问题，11 月 7 日更新说明里已写明修复。如果更新后仍出现，检查是否在横屏切换时手动关过字幕轨，字幕轨状态会跟随设备方向重置一次。</p>
+        </details>
+        <details>
+          <summary>试看 6 分钟到期后会不会自动续播？</summary>
+          <p class="ans">不会。试看章节到 6 分钟停止，需要登录后从头或从断点继续。断点会保留，登录后进入同一条目会提示“继续观看”，不需要重新找位置。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="sect" id="comments">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>用户反馈</h2>
+        <span class="sub">11 月 1 日至 8 日的公开反馈摘录，保留原有说法，包含中性意见与吐槽。</span>
+      </div>
+      <div class="cmts">
+        <div class="cmt">
+          <div class="who"><span class="av">林</span><span>林间散步 · 11-08</span></div>
+          <blockquote>《珊瑚礁的三百天》4K 版在 hd-e2 一直很稳，52 分钟全程没卡。比上个月看的 1080p 版清楚不少，水下细节能看清了。</blockquote>
+          <span class="rate">★★★★★</span>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">周</span><span>周三不加班 · 11-08</span></div>
+          <blockquote>《潮汐线》第 7 集口型对不上，换了 hd-c1 才好。这个问题应该早点在播放页标出来，不是每个人都会去翻线路说明。</blockquote>
+          <span class="rate">★★★☆☆</span>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">陈</span><span>陈默 · 11-07</span></div>
+          <blockquote>移动端更新到 3.5.0 后横屏字幕正常了，之前切一次方向就得重新选字幕，现在不用了。</blockquote>
+          <span class="rate">★★★★☆</span>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">郑</span><span>郑小满 · 11-06</span></div>
+          <blockquote>家长控制改成按频道屏蔽挺实用，只关体育就行，纪录片还能给孩子看。音频节目没覆盖，这点有点奇怪。</blockquote>
+          <span class="rate">★★★★☆</span>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">吴</span><span>吴桐 · 11-05</span></div>
+          <blockquote>电视端换账号后进度还是旧的，得手动同步一次。3.4.1 说修复了，实际只是不再自动残留，体验上还是多一步。</blockquote>
+          <span class="rate">★★☆☆☆</span>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">何</span><span>何一 · 11-04</span></div>
+          <blockquote>《雾港档案》第 3 季一次 12 集放出来，两天看完。第 2 集片头静音我以为是网络问题，后来看到说明才知道是母带。</blockquote>
+          <span class="rate">★★★★☆</span>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">夏</span><span>夏夜电台 · 11-03</span></div>
+          <blockquote>音频节目后台播放做得不错，看别的频道也不中断。夜间电台故事集第 14 期音质比前面几期好，应该是重新处理过。</blockquote>
+          <span class="rate">★★★★★</span>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">赵</span><span>赵之远 · 11-02</span></div>
+          <blockquote>城市联赛半决赛回放的战术角标有用，第四节最后两分钟能看清站位。就是回放加载比剧集慢一点。</blockquote>
+          <span class="rate">★★★★☆</span>
+        </div>
+        <div class="cmt">
+          <div class="who"><span class="av">许</span><span>许拾 · 11-01</span></div>
+          <blockquote>线路列表 38 条看着多，其实常用的就那六条。剩下的大部分标着可用，播起来码率不高，不如不摆出来。</blockquote>
+          <span class="rate">★★★☆☆</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="sect" id="news">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>相关资讯</h2>
+        <span class="sub">与线路、字幕、客户端版本相关的短期变动，每条只讲一个事实。</span>
+      </div>
+      <div class="news">
+        <article>
+          <h3>华东节点 11-06 完成轮换</h3>
+          <p>hd-e1 停止新分配，改由 hd-e2 承担。旧线路保留 14 天只读，11 月 20 日后下线。</p>
+          <div class="meta"><span>11-06</span><span class="tag">线路</span></div>
+        </article>
+        <article>
+          <h3>日韩剧集日语原声字幕补齐</h3>
+          <p>11 月 2 日一次性补 14 部，共 2,180 条字幕。此前缺失的集中在第 5 集之后。</p>
+          <div class="meta"><span>11-02</span><span class="tag">字幕</span></div>
+        </article>
+        <article>
+          <h3>家长控制改为按频道屏蔽</h3>
+          <p>9 个频道中 8 个可单独关闭，音频节目标注“暂不支持”。PIN 仍为 4 位数字。</p>
+          <div class="meta"><span>11-04</span><span class="tag">功能</span></div>
+        </article>
+        <article>
+          <h3>《雾港档案》第 3 季上线说明</h3>
+          <p>第 2 集第 41 秒至第 53 秒静音属母带问题，两条线路位置一致，非播放器故障。</p>
+          <div class="meta"><span>11-02</span><span class="tag">内容</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关推荐 -->
+  <section class="sect" id="related">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>相关推荐</h2>
+        <span class="sub">按常搜词给入口，每个标签都对应一个具体条目或频道，不做泛词。</span>
+      </div>
+      <div class="rec-tags">
+        <a href="/#picks">潮汐线第 7 集换线路</a>
+        <a href="/#picks">珊瑚礁的三百天 4K</a>
+        <a href="/#channels">悬疑剧集在线观看</a>
+        <a href="/#channels">自然纪录片 4K 合集</a>
+        <a href="/#picks">城市联赛半决赛回放</a>
+        <a href="/#picks">墨间少年第二季字幕</a>
+        <a href="/#guide">手工纸艺入门 8 讲</a>
+        <a href="/#channels">夜间电台故事集</a>
+        <a href="/#channels">航天纪录片轨道之上</a>
+        <a href="/#deep">线路切换实测记录</a>
+        <a href="/#latest">电视端 3.4.1 收藏同步</a>
+        <a href="/#picks">一口锅的旅行英文字幕</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 时间线补充板块 -->
+  <section class="sect" id="timeline">
+    <div class="wrap">
+      <div class="sect-head">
+        <h2>线路轮换时间线</h2>
+        <span class="sub">11 月以来的线路与版本节点，用来判断一次播放故障是新问题还是旧问题。</span>
+      </div>
+      <ol class="timeline">
+        <li><time datetime="2026-11-01">11-01</time><b>电视端 3.4.1</b> 修复换账号后读到旧进度，需手动同步一次。</li>
+        <li><time datetime="2026-11-02">11-02</time><b>日韩剧集字幕补齐</b> 14 部、2,180 条字幕上线。</li>
+        <li><time datetime="2026-11-03">11-03</time><b>城市联赛半决赛回放</b> 上架，含战术角标版本。</li>
+        <li><time datetime="2026-11-04">11-04</time><b>家长控制按频道屏蔽</b> 上线，音频节目暂不支持。</li>
+        <li><time datetime="2026-11-05">11-05</time><b>4K 码率上调</b> 由 18Mbps 提到 24Mbps，自动降档阈值 18Mbps。</li>
+        <li><time datetime="2026-11-06">11-06</time><b>华东节点轮换</b> hd-e1 改 hd-e2，旧线 11-20 下线。</li>
+        <li><time datetime="2026-11-07">11-07</time><b>移动端 3.5.0</b> 修复横屏后字幕消失。</li>
+        <li><time datetime="2026-11-08">11-08</time><b>《潮汐线》第 7 集</b> hd-e2 音画偏移 0.4 秒，推送切换建议。</li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <div class="f-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#f4b73f"/>
+            <rect x="13" y="19" width="38" height="27" rx="4" fill="#1b3a5c"/>
+            <path d="M28 28l11 5.5-11 5.5z" fill="#f4b73f"/>
+          </svg>
+          <span>笔盒在线永久观看入口</span>
+        </div>
+        <p>把频道、线路、字幕与同步状态分开标注，方便判断一次播放问题出在片源、通道还是客户端。</p>
+        <p class="disc">页面内条目、线路编号、播放数据均为示例，用于说明判断方法；实际以官方版本说明为准。</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="/#channels">悬疑剧集</a></li>
+          <li><a href="/#channels">自然纪录片</a></li>
+          <li><a href="/#channels">国产动画</a></li>
+          <li><a href="/#channels">体育赛事回放</a></li>
+          <li><a href="/#channels">音频节目</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用帮助</h4>
+        <ul>
+          <li><a href="/#guide">观看体验指南</a></li>
+          <li><a href="/#compare">线路对照</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#latest">更新动态</a></li>
+          <li><a href="/#timeline">线路轮换时间线</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>近期节点</h4>
+        <ul>
+          <li><a href="/#news">11-06 华东节点轮换</a></li>
+          <li><a href="/#news">11-04 家长控制改版</a></li>
+          <li><a href="/#news">11-02 字幕补齐 14 部</a></li>
+          <li><a href="/#deep">11-02 至 11-06 实测</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© 2026 笔盒在线永久观看入口 · 内容示例站</span>
+      <span>更新时间 2026-11-08 · 对应正文“最新更新动态”与“线路轮换时间线”</span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('primaryNav');
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? '关闭导航菜单' : '打开导航菜单');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && nav.classList.contains('open')){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.setAttribute('aria-label','打开导航菜单');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && nav.classList.contains('open')){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY > 520){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('.side-nav a'));
+  var targets = links.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos = window.scrollY + 120;
+    var idx = -1;
+    targets.forEach(function(t, i){
+      if(t && t.offsetTop <= pos){ idx = i; }
+    });
+    links.forEach(function(a, i){
+      a.classList.toggle('active', i === idx);
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var msg = document.createElement('div');
+  msg.className = 'search-msg';
+  msg.setAttribute('role','status');
+  form.parentNode.appendChild(msg);
+  var data = [];
+  document.querySelectorAll('.card-body h3, .idx-group .chips a, .upd-list .u-main, .faq summary, .rec-tags a, .timeline b, .news article h3').forEach(function(el){
+    var text = el.textContent.replace(/\s+/g,' ').trim();
+    var sec = el.closest('section');
+    data.push({text:text, id: sec ? sec.id : 'top'});
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var kw = input.value.trim();
+    if(!kw){ msg.style.display='none'; return; }
+    var hits = data.filter(function(d){ return d.text.indexOf(kw) > -1; });
+    if(hits.length === 0){
+      msg.textContent = '没有找到“' + kw + '”相关条目，可试频道名（悬疑剧集、自然纪录片）或线路编号（hd-e2、hd-c1）。';
+      msg.style.display = 'block';
+    } else {
+      msg.textContent = '找到 ' + hits.length + ' 条与“' + kw + '”相关：' + hits.slice(0,4).map(function(h){return h.text;}).join('；') + '。';
+      msg.style.display = 'block';
+      var first = document.getElementById(hits[0].id);
+      if(first){ first.scrollIntoView({behavior:'smooth', block:'start'}); }
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "笔盒在线永久观看入口",
+  "description": "整理笔盒各频道可用线路、收藏同步、字幕与清晰度设置，附播放故障排查与替代路径说明。",
+  "inLanguage": "zh-CN",
+  "dateModified": "2026-11-08"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "悬疑剧集在 hd-e2 出现音画不同步，怎么换线路？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "《潮汐线》第 7 集在 hd-e2 有 0.4 秒偏移，播放器右下角点“线路”选 hd-c1，进度保留到秒，收藏状态不变。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "自然纪录片的 4K 版本有哪几部，带宽要求多少？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "《珊瑚礁的三百天》《高原的冬天》《候鸟航线》《轨道之上》共 4 部在架，码率 24Mbps，建议 25Mbps 以上，低于 18Mbps 自动降到 1080p。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "收藏和观看进度能在电视端同步吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "同一账号可以。11 月 1 日电视端 3.4.1 修复换账号后读到旧进度，换账号后需在设置页手动触发一次同步。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家长控制可以只屏蔽体育赛事频道吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。11 月 4 日起改为按频道屏蔽，可单独关闭体育赛事与舞台现场；音频节目暂不支持屏蔽。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "移动端横屏后字幕消失是什么原因？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "移动端 3.5.0 之前的版本存在该问题，11 月 7 日更新说明写明修复；更新后若仍出现，检查横屏时是否手动关过字幕轨。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "试看 6 分钟到期后会不会自动续播？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不会。试看到 6 分钟停止，需登录后继续，断点保留，登录后同一条目提示继续观看。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+              </html>
